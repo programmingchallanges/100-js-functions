@@ -4,9 +4,10 @@ import { getState, setState } from "./utils/state.utils.js";
 import { renderLayout } from "./ui/layout.js";
 import { renderProblemView } from "./ui/problem-view.js";
 import { renderProblemList } from "./ui/problem-list.js";
+import { DOM } from "./utils/dom.utils.js";
 
 export async function renderApp() {
-  const root = document.getElementById("root");
+  const root = DOM.root;
 
   applyTheme();
 
@@ -19,7 +20,7 @@ export async function renderApp() {
 
   root.innerHTML = renderLayout();
 
-  const content = document.getElementById("content");
+  const content = DOM.content;
 
   if (state.currentProblemId) {
     await renderProblemView(content, state.currentProblemId);
