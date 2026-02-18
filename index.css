@@ -48,4 +48,16 @@ body {
   color: var(--color-text-200);
 
   font-size: var(--fz-400);
+
+  #root-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+
+    inline-size: min(76.5rem, 100% - 2rem);
+
+    margin-inline: auto;
+  }
 }
