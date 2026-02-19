@@ -9,7 +9,9 @@ export function renderLayout() {
   return `
     <div id="root-layout">
       <header>
-        <h1>100 JS Functions</h1>
+        <a href="/">
+          <h1>100 JS Functions</h1>
+        </a>
         <div>
           <button class="btn primary" id="lang-toggle">${lang === "en" ? "Persian" : "English"}</button>
           <button class="btn primary" id="theme-toggle">${theme === "dark" ? "light" : "dark"}</button>

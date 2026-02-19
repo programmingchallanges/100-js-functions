@@ -1,8 +1,10 @@
 .btn {
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   outline: none;
   border: 0;
   border-radius: var(--border-radius-100);
+  font-size: var(--fz-400);
+  font-weight: 700;
   cursor: pointer;
 
   transition: var(--transition);
@@ -13,5 +15,11 @@
 
   &.primary {
     background-color: var(--color-primary-500);
+    color: var(--color-primary-100);
+
+    &:hover {
+      background-color: var(--color-primary-100);
+      color: var(--color-primary-500);
+    }
   }
 }

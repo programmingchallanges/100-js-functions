@@ -9,7 +9,7 @@ export async function renderProblemView(container, id) {
     const markdown = await response.text();
 
     container.innerHTML = `
-      <div>
+      <div class="problem">
         ${marked(markdown)}
         <br/>
         <a href="/">← Back</a>

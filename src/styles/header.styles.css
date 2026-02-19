@@ -1,0 +1,25 @@
+#root {
+  #root-layout {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      padding-block: 1rem;
+      margin-block-end: 1rem;
+
+      border-block-end: 1px solid var(--color-primary-500);
+
+      h1 {
+        color: var(--color-primary-500);
+        font-size: var(--fz-700);
+      }
+
+      > div {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

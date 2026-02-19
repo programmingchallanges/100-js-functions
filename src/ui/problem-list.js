@@ -7,7 +7,7 @@ export function renderProblemList(container) {
   const lang = getLanguage();
 
   container.innerHTML = `
-    <div>
+    <div class="problems-list">
       ${problems
         .map(
           (p) => `

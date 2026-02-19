@@ -1,0 +1,7 @@
+main#content {
+  .problem {
+    display: grid;
+    gap: 1rem;
+    margin-block-end: 2rem;
+  }
+}
