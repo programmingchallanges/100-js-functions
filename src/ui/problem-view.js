@@ -5,7 +5,9 @@ export async function renderProblemView(container, id) {
   const lang = getLanguage();
 
   try {
-    const response = await fetch(`/src/data/problem-${id}/${lang}.md`);
+    const response = await fetch(
+      `${import.meta.env.BASE_URL}data/problem-${id}/${lang}.md`,
+    );
     const markdown = await response.text();
 
     container.innerHTML = `

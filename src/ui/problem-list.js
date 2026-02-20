@@ -1,4 +1,4 @@
-import { problems } from "../data/problems.js";
+import { problems } from "../../public/data/problems.js";
 import { getLanguage } from "../utils/i18n.utils.js";
 
 const PER_PAGE = 10;
