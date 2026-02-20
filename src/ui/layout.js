@@ -9,7 +9,7 @@ export function renderLayout() {
   return `
     <div id="root-layout">
       <header>
-        <a href="/">
+        <a href="/100-js-functions">
           <h1>100 JS Functions</h1>
         </a>
         <div>
