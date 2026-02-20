@@ -14,7 +14,9 @@ export async function renderProblemView(container, id) {
       <div class="problem">
         ${marked(markdown)}
         <br/>
-        <a href="/100-js-functions">← Back</a>
+        <a href="/100-js-functions">
+          ← Back
+        </a>
       </div>
     `;
   } catch (err) {

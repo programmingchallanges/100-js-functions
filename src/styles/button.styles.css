@@ -9,17 +9,8 @@
 
   transition: var(--transition);
 
-  &:hover {
-    transform: translateY(-3px);
-  }
-
   &.primary {
     background-color: var(--color-primary-500);
     color: var(--color-primary-100);
-
-    &:hover {
-      background-color: var(--color-primary-100);
-      color: var(--color-primary-500);
-    }
   }
 }
